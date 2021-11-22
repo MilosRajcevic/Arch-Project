@@ -1,0 +1,209 @@
+/* 
+
+---------- 01 Colors:
+Very Dark Blue: #1b1d23
+Dark Grey: #60636D
+Medium Grey: #7d828f
+Lihgt Grey:#c8ccd8
+Very Light Grey:#eeeff4
+Red(erors): #df5656
+
+--------- 02 Typography
+
+Font-widhts:
+-500 (default)
+-700 (hadings)
+
+Letter spacing:
+
+- H1 light: 5
+- H1 darkt: 2
+- H2 : 2
+- H3 : 0
+- Body : 0
+
+---- 05 SHADOWS
+
+
+---- 06 BORDER_RADIUS
+
+
+---- 07 WHITESPACE
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  padding: 0 9.6rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-background {
+  min-height: 72vh;
+  width: 100%;
+  position: relative;
+}
+
+.heading-primary-dark {
+  font-size: 6.4rem;
+  line-height: 8rem;
+  letter-spacing: 2;
+  color: #eeeff4;
+  margin-bottom: 2.4rem;
+}
+
+.heading-primary-light {
+  font-size: 20rem;
+  font-weight: 400;
+  color: #eeeff4;
+}
+
+.heading-secondary {
+  font-size: 4.6rem;
+  color: #1b1d23;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+  letter-spacing: -4px;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* BTN ICON ARROW */
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1d23;
+  padding: 2.4rem 3.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #60636d;
+}
+
+.btn:active {
+  background-color: #c8ccd8;
+}
+
+/* BTN NUMBER */
+
+.btn-number,
+.btn-number:link {
+  padding: 3.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #c8ccd8;
+  transition: all 0.3s;
+}
+
+.btn-number:hover {
+  background-color: #eeeff4;
+}
+.active {
+  background-color: #1b1d23;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.grid--1-cols {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2-cols-sized {
+  grid-template-columns: 1fr 2fr;
+}
+
+/* description text */
+.description {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.6;
+  color: #60636d;
+}
+
+/* Gallery text and link */
+
+.gallery-text-box {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0 0 4.8rem 4.8rem;
+}
+
+.view-all-projects {
+  font-size: 1.2rem;
+  color: #eeeff4;
+  text-decoration: none;
+}
+
+.galery-text {
+  font-size: 1.6rem;
+  color: #eeeff4;
+}
+
+.margin-bottom-md {
+  margin-bottom: 20rem;
+}
+.margin-bottom-lg {
+  margin-bottom: 25rem;
+}

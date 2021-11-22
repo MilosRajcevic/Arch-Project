@@ -1,0 +1,524 @@
+@media (max-width: 77.5em) {
+  .welcome-box {
+    padding-left: 12.8rem;
+  }
+  .about-text-box {
+    padding: 12.8rem 9.6rem 0 12.8rem;
+  }
+  .heading-primary-light {
+    font-size: 16rem;
+  }
+}
+
+@media (max-width: 64em) {
+  /* .container {
+    padding: 0 4.8rem;
+  } */
+
+  .main-nav-list {
+    gap: 4.8rem;
+  }
+
+  .container-background {
+    min-height: 82vh;
+  }
+
+  .hero-slide:first-child {
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/tablet/image-hero-paramour.jpg);
+  }
+  .hero-slide:nth-child(2) {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/tablet/image-hero-seraph.jpg);
+  }
+  .hero-slide:nth-child(3) {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/tablet/image-hero-federal.jpg);
+  }
+  .hero-slide:nth-child(4) {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/tablet/image-hero-trinity.jpg);
+  }
+
+  .hero-text-box {
+    min-width: 45rem;
+    max-width: 80rem;
+    padding-left: calc(5rem * 3 + 2rem);
+    padding-bottom: 15rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 2.4rem;
+    font-size: 1.4rem;
+  }
+  /* BTN NUMBER */
+
+  .hero-number-box {
+    left: 0;
+    bottom: 0;
+  }
+  .btn-number,
+  .btn-number:link {
+    padding: 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .welcome {
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+
+  .heading-box {
+    position: relative;
+    transform: none;
+    margin-bottom: 3.2rem;
+  }
+  .heading-primary-light {
+    font-size: 9.8rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+    line-height: 1.4;
+    color: #60636d;
+  }
+
+  .welcome-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .welcome-img-box {
+    display: none;
+  }
+
+  .small-team-section {
+    margin-bottom: 20rem;
+  }
+
+  .small-team-background {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/tablet/image-small-team.jpg);
+    width: 100%;
+    height: 56rem;
+    background-size: cover;
+    position: relative;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .number {
+    font-size: 16rem;
+  }
+  .footer .container {
+    padding: 0;
+  }
+  /* ***************************************** */
+  .hero-about-grid {
+    display: block;
+    position: relative;
+  }
+
+  .hero-about img {
+    width: 100%;
+  }
+
+  .about-text-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 90%;
+    padding: 0 0 0 4.8rem;
+    transform: translatex(0);
+  }
+  .heding-box-about {
+    transform: translate(0, -50%);
+  }
+
+  /* ***************************************** */
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid-2-cols-sized {
+    grid-template-columns: 1fr;
+  }
+  .heritage-img-item {
+    display: none;
+  }
+  .section-contact .grid {
+    column-gap: 0;
+  }
+  .grid--1-cols {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .view-on-map {
+    gap: 8px;
+  }
+}
+/* ******************************* */
+/* 768px */
+/* ******************************* */
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0;
+  }
+  .margin-bottom-md {
+    margin-bottom: 10rem;
+  }
+
+  .container-background {
+    min-height: 82vh;
+  }
+
+  .hero-slide:first-child {
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/mobile/image-hero-paramour.jpg);
+  }
+  .hero-slide:nth-child(2) {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/mobile/image-hero-seraph.jpg);
+  }
+  .hero-slide:nth-child(3) {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/mobile/image-hero-federal.jpg);
+  }
+  .hero-slide:nth-child(4) {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/mobile/image-hero-trinity.jpg);
+  }
+
+  .hero-text-box {
+    min-width: 45rem;
+    max-width: 80rem;
+    padding-left: calc(4.5rem + 2rem);
+    padding-bottom: 15rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 2.4rem;
+    font-size: 1.4rem;
+  }
+  /* BTN NUMBER */
+
+  .hero-number-box {
+    left: 0;
+    bottom: 0;
+  }
+  .btn-number,
+  .btn-number:link {
+    padding: 1.6rem;
+    font-size: 1.6rem;
+  }
+
+  .welcome {
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+
+  .heading-box {
+    display: none;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+    line-height: 1.4;
+    color: #60636d;
+  }
+
+  .welcome-box {
+    padding: 0 4.8rem;
+  }
+
+  .small-team-background {
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.4),
+        rgb(0, 0, 0, 0.4)
+      ),
+      url(/assets/home/mobile/image-small-team.jpg);
+    width: 100%;
+    min-height: 82rem;
+    background-size: cover;
+    position: relative;
+  }
+
+  .number {
+    display: none;
+  }
+
+  .featured-nav {
+    padding: 0 4.8rem;
+  }
+
+  .featured-nav .btn {
+    display: none;
+  }
+
+  .gallery {
+    padding: 0 4.8rem;
+  }
+  .gallery-text-box {
+    padding: 0 0 4.8rem 4.8rem;
+  }
+  .galery-text {
+    font-size: 1.6rem;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    gap: 0;
+    margin-right: 0;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    font-size: 1.6rem;
+  }
+
+  .footer-logo {
+    transform: translate(0, -50%);
+  }
+  .footer-nav {
+    margin-bottom: 4.8rem;
+  }
+  .footer-btn {
+    position: relative;
+    transform: none;
+    margin-bottom: 4.8rem;
+  }
+  /********************/
+
+  .hero-about-grid {
+    display: block;
+  }
+
+  .hero-about img {
+    width: 100%;
+  }
+
+  .about-text-box {
+    position: relative;
+    display: inline-block;
+    bottom: 10rem;
+    height: 80%;
+    width: 90%;
+    padding: 4.8rem 4.8rem 0;
+  }
+  .heding-box-about {
+    display: none;
+  }
+  .section-about.margin-bottom-md {
+    margin-bottom: 0;
+  }
+  /********************************/
+
+  .heritage-text-box {
+    padding: 0 4.8rem;
+  }
+
+  .leader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4.8rem;
+  }
+
+  .section-leaders h2 {
+    padding: 0 4.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .grid-leaders {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .overlay {
+    display: none;
+  }
+  .leader-img {
+    max-width: 100%;
+  }
+  .leader-icon-box {
+    display: none;
+  }
+  .leader-icon-box-mob {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .section-cta,
+  .section-contact {
+    padding: 4.8rem;
+  }
+
+  .grid--1-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .view-on-map {
+    gap: 8px;
+    margin-bottom: 9.6rem;
+  }
+
+  .margin-bottom-lg {
+    margin-bottom: 10rem;
+  }
+  /***********/
+
+  .nav-container {
+    justify-content: space-between;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    color: #1b1d23;
+    text-decoration: none;
+  }
+
+  .main-nav {
+    background-color: #eeeff4;
+    position: absolute;
+    top: calc(4.3rem + 5.1rem + 2.3rem);
+    right: 0;
+    width: 90%;
+    height: 40vh;
+    transform: translatex(100%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="open-outline"] {
+    display: none;
+  }
+}
+
+/* ******************************* */
+/* 380px */
+/* ******************************* */
+@media (max-width: 23.75em) {
+  .hero-text-box {
+    padding-left: 2rem;
+    padding-bottom: 12rem;
+    min-width: 20rem;
+    max-width: 40rem;
+  }
+
+  .heading-primary-dark {
+    font-size: 4.8rem;
+  }
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .small-team-background {
+    min-height: 50rem;
+  }
+
+  .small-team-box {
+    padding: 12.8rem 0 0 6.4rem;
+  }
+  .gallery-text-box {
+    padding: 0 0 2.4rem 2.4rem;
+  }
+}
+
+/* FLEXBOX GAP IN SAFARI*/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .footer-box:not(:last-child) {
+  margin-right: 4.8rem;
+}
+.no-flexbox-gap .leader-icon-box:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.no-flexbox-gap .contact-block:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.no-flexbox-gap .view-on-map:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.no-flexbox-gap .gallery-text-box:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 64em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 4.8rem;
+  }
+  .no-flexbox-gap .view-on-map:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 48em) {
+  .no-flexbox-gap .footer-box:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .no-flexbox-gap.leader-icon-box-mob:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+}
