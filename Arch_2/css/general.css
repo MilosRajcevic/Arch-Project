@@ -1,0 +1,217 @@
+/* 
+
+---------- 01 Colors:
+Very Dark Blue: #1b1d23
+Dark Grey: #60636D
+Medium Grey: #7d828f
+Lihgt Grey:#c8ccd8
+Very Light Grey:#eeeff4
+Red(erors): #df5656
+
+--------- 02 Typography
+
+Font-widhts:
+-500 (default)
+-700 (hadings)
+
+Letter spacing:
+
+- H1 light: 5
+- H1 darkt: 2
+- H2 : 2
+- H3 : 0
+- Body : 0
+
+---- 05 SHADOWS
+
+
+---- 06 BORDER_RADIUS
+
+
+---- 07 WHITESPACE
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  overflow-x: hidden;
+  line-height: 2.5rem;
+}
+
+picture source,
+picture img,
+figure img {
+  display: block;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 16.5rem;
+  position: relative;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.heading-primary-dark {
+  font-size: 8rem;
+  line-height: 8rem;
+  letter-spacing: -2px;
+  font-weight: 400;
+  color: #eeeff4;
+  padding-bottom: 1.4rem;
+}
+
+.heading-primary-light {
+  font-size: 20rem;
+  line-height: 20rem;
+  letter-spacing: -5px;
+  color: #eeeff4;
+  font-weight: 400;
+}
+
+.heading-secondary {
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+  letter-spacing: -2px;
+  font-weight: 400;
+  margin-bottom: 5.6rem;
+}
+
+.description-hero {
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  color: #eeeff4;
+}
+.description {
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  color: #60636d;
+  margin-bottom: 2.5rem;
+}
+.description:last-child {
+  margin-bottom: 0;
+}
+
+.module {
+  overflow: hidden;
+}
+.module p {
+  margin: 0;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1d23;
+  color: #fff;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding: 2.4rem 3.2rem 2.6rem 5.9rem;
+}
+
+.btn:hover {
+  background-color: #60636d;
+}
+
+.btn:active {
+  background-color: #c8ccd8;
+}
+.btn-icon {
+  margin-left: 2.4rem;
+  stroke-width: 2;
+}
+.featured-section .btn-icon {
+  stroke-width: 1;
+}
+.btn-number,
+.btn-number:visited,
+.btn-number:link {
+  background: none;
+  border: none;
+  background-color: #fff;
+  color: #7d828f;
+  padding: 3.3rem;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.3s;
+  max-width: 8rem;
+  max-height: 8rem;
+}
+
+.btn-number:hover {
+  background-color: #eeeff4;
+}
+
+.btn-number.active {
+  background-color: #1b1d23;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 3.2rem;
+}
+
+.grid--1-cols {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2-cols-sized {
+  grid-template-columns: 1fr 2fr;
+}
+
+.margin-bottom-md {
+  margin-bottom: 20rem;
+}
+.margin-bottom-sm {
+  margin-bottom: 16rem;
+}
+.margin-bottom-lg {
+  margin-bottom: 27rem;
+}
