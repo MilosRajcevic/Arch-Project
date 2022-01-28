@@ -1,14 +1,18 @@
-let paginationBtn = document.querySelectorAll(".btn-number");
-let slides = document.querySelectorAll(".hero-slide");
+let btnNumber = document.querySelectorAll(".btnNumber");
+let slidesHero = document.querySelectorAll(".hero-slide");
+let slideIndex = 0;
 
-paginationBtn.forEach((button) => {
+console.log(slidesHero);
+console.log(btnNumber.entries());
+
+btnNumber.forEach((button) => {
   button.onclick = () => {
-    paginationBtn.forEach((cta) => cta.classList.remove("active"));
+    btnNumber.forEach((cta) => cta.classList.remove("active"));
     button.classList.add("active");
 
     let dataFilter = button.getAttribute("data-pagination");
 
-    slides.forEach((slide) => {
+    slidesHero.forEach((slide) => {
       slide.classList.remove("active");
       slide.classList.add("hide");
 
@@ -17,9 +21,48 @@ paginationBtn.forEach((button) => {
         slide.classList.remove("hide");
       }
     });
+
+    for (const [a, b] of btnNumber.entries()) {
+      let returnSlideIndex = btnNumber[a].classList.contains("active");
+      if (returnSlideIndex) slideIndex = a + 1;
+      console.log("a", a, "b", b);
+      console.log("SlideIndex posle klika", slideIndex);
+    }
   };
 });
+///////////////////////////////////////////////////////////////
+showslidesHero();
 
+function showslidesHero() {
+  let i;
+  console.log("Kada udje u show Slides f-ju", slideIndex);
+  // kada kliknemo dugme:
+  // 1. da se klasa active prebaci na trenutni btn, a na sve ostale hidden,
+  // 2. da uzmemo vrednost pozicije tog btn kako bi postavili za slideIndex, kako bi slider krenuo od tog slajda a ne kako on ide!
+  slideIndex++;
+  //Vraca slajder na pocetak
+  if (slideIndex > slidesHero.length) {
+    slideIndex = 1;
+  }
+  // Dodaje active za hero-slide
+  for (let i = 0; i < slidesHero.length; i++) {
+    slidesHero[i].classList.add("hide");
+    slidesHero[i].classList.remove("active");
+  }
+
+  //Dodaje active status na dugmetu da bude crno
+  for (let i = 0; i < btnNumber.length; i++) {
+    btnNumber[i].className = btnNumber[i].className.replace("active", "");
+  }
+
+  slidesHero[slideIndex - 1].classList.add("active");
+  slidesHero[slideIndex - 1].classList.remove("hide");
+  btnNumber[slideIndex - 1].className += " active";
+
+  setTimeout(showslidesHero, 5000); // Change image every 2 seconds
+}
+
+///////////////////////////
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 const mainEl = document.querySelector("main");
@@ -30,35 +73,6 @@ btnNavEl.addEventListener("click", function () {
 btnNavEl.addEventListener("click", function () {
   mainEl.classList.toggle("shadow");
 });
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-
-  var slides = document.getElementsByClassName("hero-slide");
-  var btnNum = document.getElementsByClassName("btn-number");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.add("hide");
-    slides[i].classList.remove("active");
-  }
-
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  for (i = 0; i < btnNum.length; i++) {
-    btnNum[i].className = btnNum[i].className.replace("active", "");
-  }
-
-  slides[slideIndex - 1].classList.add("active");
-  slides[slideIndex - 1].classList.remove("hide");
-  btnNum[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-  console.log(slides);
-}
 
 /* FLEXBOX GAP IN SAFARI*/
 
@@ -74,7 +88,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
