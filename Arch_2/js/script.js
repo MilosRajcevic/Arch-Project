@@ -1,3 +1,15 @@
+///////////////////////////
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const overlay = document.querySelector(".mob-overlay");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+btnNavEl.addEventListener("click", function () {
+  overlay.classList.toggle("hide");
+});
+///////////////////
 let btnNumber = document.querySelectorAll(".btnNumber");
 let slidesHero = document.querySelectorAll(".hero-slide");
 let slideIndex = 0;
@@ -61,18 +73,6 @@ function showslidesHero() {
 
   setTimeout(showslidesHero, 5000); // Change image every 2 seconds
 }
-
-///////////////////////////
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
-const mainEl = document.querySelector("main");
-
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-btnNavEl.addEventListener("click", function () {
-  mainEl.classList.toggle("shadow");
-});
 
 /* FLEXBOX GAP IN SAFARI*/
 
